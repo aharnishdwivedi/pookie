@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
 function Heart({ id, startX, startY, delay }) {
-  const colors = ['#FF9BB3', '#FFB6C1', '#F7A8B8', '#FFC0CB', '#FFD1DC', '#FF69B4']
+  const colors = ['#B0E0E6', '#87CEEB', '#E0F6FF', '#ADD8E6', '#B0E0E6', '#AFEEEE']
+  const emojis = ['👑', '✨', '💎', '⭐', '🦋', '💙']
   const color = colors[Math.floor(Math.random() * colors.length)]
+  const emoji = emojis[Math.floor(Math.random() * emojis.length)]
   const size = Math.random() * 20 + 15
   const duration = Math.random() * 3 + 4
   const endY = startY - (Math.random() * 300 + 200)
@@ -37,7 +39,7 @@ function Heart({ id, startX, startY, delay }) {
         ease: "easeOut"
       }}
     >
-      ❤️
+      {emoji}
     </motion.div>
   )
 }

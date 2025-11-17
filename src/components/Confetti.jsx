@@ -45,7 +45,7 @@ function Confetti({ trigger }) {
 
   useEffect(() => {
     if (trigger) {
-      const colors = ['#FF9BB3', '#FFB6C1', '#F7A8B8', '#FFC0CB', '#FFD1DC', '#FF69B4', '#FFB6C1']
+      const colors = ['#B0E0E6', '#87CEEB', '#E0F6FF', '#ADD8E6', '#AFEEEE', '#B0E0E6', '#87CEEB']
       const newPieces = Array.from({ length: 50 }, (_, i) => ({
         id: i,
         startX: Math.random() * 100,

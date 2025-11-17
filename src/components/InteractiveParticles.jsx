@@ -35,7 +35,7 @@ function InteractiveParticles({ mouseX, mouseY, active }) {
 
   useEffect(() => {
     if (active) {
-      const colors = ['#FF9BB3', '#FFB6C1', '#F7A8B8', '#FFC0CB']
+      const colors = ['#B0E0E6', '#87CEEB', '#E0F6FF', '#ADD8E6']
       const newParticle = {
         id: Date.now() + Math.random(),
         x: (mouseX / window.innerWidth) * 100,
